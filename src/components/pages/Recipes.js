@@ -31,7 +31,7 @@ export default class Recipes extends Component {
                     search={this.state.search}
                     handleChange={this.handleChange}
                     handleSubmit={this.handleSubmit} />
-                <RecipeList recipes={recipeData} />
+                <RecipeList key={recipeData.id} recipes={recipeData} />
             </>
         )
     }
